@@ -7,18 +7,124 @@
 @import "_fonts";
 //===========================================
 
-.text {
-   font-family: 'PFDinTextCondPro';
-   font-size: 20px;
-   font-weight: normal;
+.conteyner {
+   background-color: black;
+   //border: 1px solid #000;
+   margin: 20px;
+   width: 1800px;
+   height: 800px;
 }
-.text1 {
-   font-family: 'PFDinTextCondPro';
-   font-size: 20px;
-   font-weight: 500;
+.header {
+   text-align: center;
+
+   &__text {
+      font-size: 50px;
+      font-weight: 500;
+      font-family: 'PT Sans';
+      color: blue;
+   }
 }
-.text2 {
-   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-   font-weight: normal;
-   font-size: 20px;
+
+.menu {
+   display: flex;
+   justify-content: space-around;
+   margin: 10px;
+   border: 1px solid #000;
+   width: 1600px;
+   height: 200px;
 }
+.menu-produkt {
+
+		&__text {
+         font-size: 18px;
+         font-weight: normal;
+         font-family: 'PT Sans';
+         text-align: center;
+         color: blue;
+         margin: 0px 0px 15px 0px;
+		}
+
+		&__button {
+         
+         width: 360px;
+         height: 30px;
+      }
+
+      &__button li:hover{
+         margin: 0px 0px 20px 0px;
+         font-size: 18px;
+         font-weight: normal;
+         font-family: 'PT Sans';
+         text-align: left;
+         color: #fff;
+         border: 1px solid blue;
+         width: 360px;
+         height: 30px;
+      }
+
+		&__img {
+		}
+}
+.menu-contakts {
+
+		&__text {
+         font-size: 18px;
+         font-weight: normal;
+         font-family: 'PT Sans';
+         text-align: center;
+         color: blue;
+         margin: 0px 0px 15px 0px;
+		}
+
+		&__button {
+         width: 110px;
+         height: 30px;
+         //border: 1px solid blue;
+         //border-radius: 20px;
+         //background-color: blue;
+		}
+      &__button li:hover{
+         font-size: 18px;
+         font-weight: normal;
+         font-family: 'PT Sans';
+         text-align: center;
+         color: blue;
+         
+      }
+      
+
+		&__img {
+		}
+}
+.menu-company {
+
+		&__text {
+         font-size: 18px;
+         font-weight: normal;
+         font-family: 'PT Sans';
+         text-align: center;
+         color: blue;
+         margin: 0px 0px 15px 0px;
+		}
+
+		&__button {
+         width: 110px;
+         height: 30px;
+         //border: 1px solid blue;
+         //border-radius: 20px;
+         //background-color: blue;
+		}
+      &__button li:hover{
+         font-size: 18px;
+         font-weight: normal;
+         font-family: 'PT Sans';
+         text-align: center;
+         color: #fff;
+         
+      }
+      
+
+		&__img {
+		}
+}
+
