@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+// Обнуляющий стиль
+@import "_nool";
+
+// Шрифты
+@import "_fonts";
+//===========================================
+
+.text {
+   font-family: 'PFDinTextCondPro';
+   font-size: 20px;
+   font-weight: normal;
+}
+.text1 {
+   font-family: 'PFDinTextCondPro';
+   font-size: 20px;
+   font-weight: 500;
+}
