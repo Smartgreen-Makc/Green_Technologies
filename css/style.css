@@ -90,10 +90,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .conteyner {
-  background-color: black;
-  margin: 20px;
-  width: 1800px;
-  height: 800px;
+  padding: 50px;
+  height: 100%;
 }
 
 .header {
@@ -107,84 +105,74 @@ h1, h2, h3, h4, h5, h6 {
   color: blue;
 }
 
-.menu {
+.menu li {
+  position: relative;
+}
+
+.menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin: 10px;
+}
+
+.menu__list li {
+  margin: 0px 20px 0px 0px;
+}
+
+.menu__linc {
+  color: blue;
+}
+
+.sab-menu__list {
+  display: none;
+  min-width: 100%;
+  position: absolute;
   border: 1px solid #000;
-  width: 1600px;
-  height: 200px;
+  left: 0;
+  top: 10;
+  padding: 10px 0px 0px 0px;
 }
 
-.menu-produkt__text {
-  font-size: 18px;
-  font-weight: normal;
-  font-family: 'PT Sans';
-  text-align: center;
-  color: blue;
-  margin: 0px 0px 15px 0px;
+.sab-menu__list li {
+  background-color: #fff;
 }
 
-.menu-produkt__button {
-  width: 360px;
-  height: 30px;
+.sab-menu__linc {
+  color: green;
+  display: inline-block;
+  padding: 5px 10px;
 }
 
-.menu-produkt__button li:hover {
-  margin: 0px 0px 20px 0px;
-  font-size: 18px;
-  font-weight: normal;
-  font-family: 'PT Sans';
-  text-align: left;
-  color: #fff;
-  border: 1px solid blue;
-  width: 360px;
-  height: 30px;
+.sab-sab-menu__list {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  padding: 0px 0px 0px 25px;
+  border: 1px solid #000;
+  min-width: 100%;
 }
 
-.menu-contakts__text {
-  font-size: 18px;
-  font-weight: normal;
-  font-family: 'PT Sans';
-  text-align: center;
-  color: blue;
-  margin: 0px 0px 15px 0px;
+.sab-bab-menu__linc {
+  display: inline-block;
+  padding: 5px 10px;
 }
 
-.menu-contakts__button {
-  width: 110px;
-  height: 30px;
+.arrow {
+  position: absolute;
+  right: 0px;
+  top: 5px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid red;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
 }
 
-.menu-contakts__button li:hover {
-  font-size: 18px;
-  font-weight: normal;
-  font-family: 'PT Sans';
-  text-align: center;
-  color: blue;
+body.mouse .menu__list > li:hover .sab-menu__list {
+  display: block;
 }
 
-.menu-company__text {
-  font-size: 18px;
-  font-weight: normal;
-  font-family: 'PT Sans';
-  text-align: center;
-  color: blue;
-  margin: 0px 0px 15px 0px;
-}
-
-.menu-company__button {
-  width: 110px;
-  height: 30px;
-}
-
-.menu-company__button li:hover {
-  font-size: 18px;
-  font-weight: normal;
-  font-family: 'PT Sans';
-  text-align: center;
-  color: #fff;
+body.mouse .sab-menu__list > li:hover .sab-sab-menu__list {
+  display: block;
 }
