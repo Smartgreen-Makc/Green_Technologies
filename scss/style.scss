@@ -27,17 +27,25 @@
 .menu li {
    position: relative;
 }
+
+
 .menu {
 
    &__list {
       display: flex;
+      justify-content: space-around;
       li {
-         margin: 0px 20px 0px 0px;
+         margin: 0px 30px 0px 0px;
       }
+      
+      
    }
 
    &__linc {
       color: blue;
+   }
+   .parent{
+      margin: 0px 30px 0px 0px;
    }
 }
 .sab-menu {
@@ -46,7 +54,6 @@
       display: none;
       min-width: 100%;
       position: absolute;
-      border: 1px solid #000;
       left: 0;
       top: 10;
       padding: 10px 0px 0px 0px;
@@ -70,7 +77,6 @@
       top: 0;
       left: 100%;
       padding: 0px 0px 0px 25px;
-      border: 1px solid #000;
       min-width: 100%;
       
    }
@@ -86,9 +92,13 @@
 .menu {
 
    &__arrow {
+      
    }
+      
+   
 }
 .arrow {
+   display: none;
    position: absolute;
    right: 0px;
    top: 5px;
@@ -97,11 +107,73 @@
    border-top: 10px solid red;
    border-right: 10px solid transparent;
    border-left: 10px solid transparent;
-
+   
 }
+.sab-menu {
+
+   &__arrow {
+      border-left: 10px solid red;
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+   }
+}
+.arrow {
+}
+
+.active {
+      transform: rotate(-180deg); 
+   }
 body.mouse .menu__list>li:hover .sab-menu__list {
 	display: block;
 }
 body.mouse .sab-menu__list>li:hover .sab-sab-menu__list {
 	display: block;
+}
+body.touch .sab-menu__list.open{
+	display: block;
+}
+body.touch .sab-sab-menu__list.open{
+	display: block;
+}
+body.touch .arrow {
+	display: block;
+}
+@media(max-width:768px){
+.wrapper{
+   padding: 15px;
+}
+.menu__list{
+   display: block;
+}
+.menu__list{
+   li{
+   margin: 0px 0px 10px 0px;
+   }
+}
+.sab-menu{
+   &__list{
+      position: relative;
+      left: 0;
+      top: 0;
+   }
+}
+.sab-sab-menu{
+   &__list{
+      padding: 0px 5px;
+      position: relative;
+      left: 0;
+      top: 0;
+   }
+}
+.sab-menu {
+
+   &__arrow {
+      top: 15px;
+      border-bottom: none;
+      border-left: 10px solid transparent;   
+      border-top: 10px solid red;
+      border-right: 10px solid transparent;
+   
+   }
+}
 }
