@@ -90,8 +90,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .conteyner {
+  background-color: black;
   padding: 50px;
   height: 100%;
+  width: 100%;
 }
 
 .header {
@@ -102,7 +104,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 50px;
   font-weight: 500;
   font-family: 'PT Sans';
-  color: blue;
+  color: green;
 }
 
 .menu li {
@@ -118,11 +120,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .menu__list li {
-  margin: 0px 30px 0px 0px;
+  margin: 30px 10px 0px 0px;
 }
 
 .menu__linc {
   color: blue;
+  font-family: 'PT Sans';
+  font-size: 16px;
 }
 
 .menu .parent {
@@ -131,33 +135,36 @@ h1, h2, h3, h4, h5, h6 {
 
 .sab-menu__list {
   display: none;
-  min-width: 100%;
+  width: 250px;
   position: absolute;
-  left: 0;
   top: 10;
+  left: 10px;
   padding: 10px 0px 0px 0px;
 }
 
 .sab-menu__list li {
-  background-color: #fff;
+  margin: 10px 10px 0px 0px;
 }
 
 .sab-menu__linc {
-  color: green;
+  background-color: #000;
+  color: orange;
   display: inline-block;
   padding: 5px 10px;
 }
 
 .sab-sab-menu__list {
   display: none;
+  width: 150px;
   position: absolute;
   top: 0;
-  left: 100%;
+  left: 150px;
   padding: 0px 0px 0px 25px;
-  min-width: 100%;
 }
 
 .sab-bab-menu__linc {
+  background-color: #000;
+  color: red;
   display: inline-block;
   padding: 5px 10px;
 }
@@ -169,15 +176,15 @@ h1, h2, h3, h4, h5, h6 {
   top: 5px;
   width: 0;
   height: 0;
-  border-top: 10px solid red;
-  border-right: 10px solid transparent;
-  border-left: 10px solid transparent;
+  border-top: 8px solid blue;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
 }
 
 .sab-menu__arrow {
-  border-left: 10px solid red;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
+  border-left: 8px solid red;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
 }
 
 .active {
@@ -206,6 +213,9 @@ body.touch .arrow {
 }
 
 @media (max-width: 768px) {
+  .conteyner {
+    height: 1500px;
+  }
   .wrapper {
     padding: 15px;
   }
@@ -213,7 +223,7 @@ body.touch .arrow {
     display: block;
   }
   .menu__list li {
-    margin: 0px 0px 10px 0px;
+    margin: 10px 0px 10px 0px;
   }
   .sab-menu__list {
     position: relative;
@@ -229,8 +239,8 @@ body.touch .arrow {
   .sab-menu__arrow {
     top: 15px;
     border-bottom: none;
-    border-left: 10px solid transparent;
-    border-top: 10px solid red;
-    border-right: 10px solid transparent;
+    border-left: 8px solid transparent;
+    border-top: 8px solid orange;
+    border-right: 8px solid transparent;
   }
 }
