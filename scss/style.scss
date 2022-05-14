@@ -9,10 +9,107 @@
 
 .wrapper {
    min-height: 100%;
+	color: #fff;
 }
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 10;
+	background-color: #912105;
+
+	&__container {
+		max-width: 1200px;
+		margin: 0 auto;
+		display: flex;
+		padding: 0px 30px;
+		align-items: center;
+		justify-content: space-between;
+		min-height: 70px;
+	}
+
+	&__logo {
+		border-radius: 50%;
+		background-color: #fff;
+		position: relative;
+		z-index: 5;
+		width: 40px;
+		height: 40px;
+	}
+
+	&__menu {
+	}
+}
+.menu {
+
+	&__icon {
+	}
+
+	&__body {
+	}
+
+	&__list {
+		>li{
+			position: relative;
+			margin: 0px 0px 0px 20px;
+		}
+	}
+
+	&__link {
+		color: #fff;
+		font-size: 18px;
+		
+	}
+	&__link:hover{
+		text-decoration: underline;
+	}
+
+	
+	&__sub-link {
+		color: #fff;
+	}
+	&__sub-link:hover{
+		text-decoration: underline;
+	}
+
+	&__sub-list {
+		position: absolute;
+		top: 100%;
+		right: 0;
+		background-color: #000;
+		padding: 15px;
+		min-width: 200px;
+		li {
+			margin: 0px 0px 10px 0px;
+		}
+		li:last-child {
+			margin: 0;
+		}
+	}
+	@media (min-width: 767px) {
+		&__list {
+			display: flex;
+			align-items: center;
+			>li{
+				padding: 10px 0px;
+			}
+		}
+		&__sub-list {
+			transform: translate(0px 10%);
+			opacity: 0;
+			visibility: hidden;
+			pointer-events: none;
+			transition: all 0.3s ease 0s;
+		}
+}
+}
+
 .page {
    padding: 90px 0px 0px 0px;
-
+p{
+	margin: 0px 0px 20px 0px;
+}
 		&__section {
          padding: 30px;
          max-width: 1200px;
@@ -33,11 +130,17 @@
 		}
 
 		&__title {
+			font-size: 50px;
+			margin: 0px 0px 20px 0px;
 		}
 
 		&__text {
+			font-size: 16px;
+			line-height: 150%;
 		}
 
 		&__sub-title {
+			font-size: 30px;
+			margin: 0px 0px 20px 0px;
 		}
 }
