@@ -41,6 +41,63 @@
 	&__menu {
 	}
 }
+	/*=========================================*/
+
+body._pc .menu{
+	&__list > li:hover{
+		.menu{
+			&__sub-list{
+				opacity: 1;
+				visibility: visible;
+				transform: translate(0px 0px);
+				pointer-events: all;
+			}
+		}
+	}
+
+}
+
+
+
+body._touch .menu{
+	&__arrow{
+		display: block;
+		width: 0;
+		height: 0;
+		margin: 0px 0px 0px 5px;
+		transition: transform 0.3s ease 0s;
+		border-left: 5px solid transparent;
+		border-right: 5px solid transparent;
+		border-top: 10px solid #fff;
+	}
+	&__list > li._active{
+		.menu{
+			&__sub-list{
+				opacity: 1;
+				visibility: visible;
+				transform: translate(0px 0px);
+				pointer-events: all;
+			}
+			&__arrow{
+				transform: rotate(-180deg);
+			}
+		}
+	}
+}
+
+body._touch .menu{
+	&__list >li{
+		display: flex;
+		align-items: center;
+	}
+}
+
+body._touch .menu{
+	&__linc{
+		flex: 1 1 auto;
+	}
+}
+	/*==================================*/
 .menu {
 
 	&__icon {
@@ -48,13 +105,16 @@
 
 	&__body {
 	}
-
+	&__arrow{
+		display: none;
+	}
 	&__list {
 		>li{
 			position: relative;
 			margin: 0px 0px 0px 20px;
 		}
 	}
+	
 
 	&__link {
 		color: #fff;
@@ -87,6 +147,10 @@
 			margin: 0;
 		}
 	}
+
+
+
+
 	@media (min-width: 767px) {
 		&__list {
 			display: flex;
