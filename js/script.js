@@ -58,8 +58,6 @@ if(menuLinks.length > 0){
 				behavior:"smooth"
 			});
 			e.preventDefault();
-
-		// 
 		}
 	}
 	
