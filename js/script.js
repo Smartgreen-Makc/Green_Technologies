@@ -44,7 +44,7 @@ if (isMobile.any()) {
 const menuLinks = document.querySelectorAll('.menu__link[data-goto]');
 if(menuLinks.length > 0){
 	menuLinks.forEach(menuLink => {
-		menuLinks.addEventListener("click", onMenuLinkClick);
+		menuLink.addEventListener("click", onMenuLinkClick);
 	});
 
 	function onMenuLinkClick(e){
