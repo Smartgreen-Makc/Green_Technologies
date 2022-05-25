@@ -1,10 +1,10 @@
 @charset "UTF-8";
 
 // Обнуляющий стиль
-@import "//../SCSS_FILES/_nool";
+@import "_nool";
 
 // Шрифты
-@import "//../SCSS_FILES/_fonts";
+@import "_fonts";
 //===========================================
 body{
 	font-size: 16px;
