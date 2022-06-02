@@ -89,8 +89,98 @@ h1, h2, h3, h4, h5, h6 {
   font-display: swap;
 }
 
-body {
-  font-size: 16px;
-  background-color: green;
+.header {
+  position: absolute;
+  left: 50%;
+  font-size: 50px;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  text-align: center;
+  color: red;
+}
+
+.wrapper {
+  background-color: #fff;
+}
+
+.block {
+  padding: 50px;
+  max-width: 2000px;
+  margin: 0px auto;
+}
+
+.block__item {
+  margin: 0px 0px 30px 0px;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+.rectangle {
+  width: 100px;
+  height: 50px;
+  background-color: red;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: red;
+}
+
+.oval {
+  width: 100px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: red;
+}
+
+.triangle-up {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid red;
+}
+
+.triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 100px solid red;
+}
+
+.triangle-left {
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-right: 100px solid red;
+}
+
+.triangle-right {
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-left: 100px solid red;
+}
+
+.paralelogram {
+  width: 150px;
+  height: 100px;
+  background-color: red;
+  -webkit-transform: skew(20deg);
+          transform: skew(20deg);
+}
+
+.trapezoid {
+  width: 200px;
+  border-bottom: 100px solid red;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
 }
