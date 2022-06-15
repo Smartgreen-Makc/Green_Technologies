@@ -16,176 +16,159 @@
 
 //===========================================
 
+
+//==========================================//
+
 .wrapper {
 	min-height: 100%;
 	display: flex;
 	flex-direction: column;
 }
-
 .conteyner {
-	//padding: 30px;
 	flex: 1 1 auto;
-	//position: relative;
 }
-
-$ur:100px;
-$rot:0deg;
-
 .tank {
-	/*
-	animation-name: tank;
-	animation-duration: 10s;
-	animation-timing-function: linear;
-	animation-direction: reverse;
-	animation-iteration-count: infinite;
-*/
 	width: 400px;
 	height: 200px;
-	//border: 1px solid red;
 	position: relative;
 	top: 200px;
 	left: 500px;
 
-	&__traks {
-		position: absolute;
+		&__traks {
+			position: absolute;
 		top: 150px;
 		left: 50px;
 		width: 300px;
 		height: 50px;
 		border-radius: 35%;
 		border: 3px solid green;
-	}
+		}
 
-	&__traks-colyesa1 {
-		position: absolute;
+		&__traks-colyesa1 {
+			position: absolute;
 		top: 7px;
 		left: 0px;
 		width: 30px;
 		height: 30px;
 		border-radius: 50%;
 		border: 3px solid red;
-	}
+		}
 
-	&__traks-colyesa2 {
-		position: absolute;
+		&__traks-colyesa2 {
+			position: absolute;
 		top: 0px;
 		left: 32px;
 		width: 45px;
 		height: 45px;
 		border-radius: 50%;
 		border: 3px solid red;
-	}
+		}
 
-	&__traks-colyesa3 {
-		position: absolute;
+		&__traks-colyesa3 {
+			position: absolute;
 		top: 0px;
 		left: 79px;
 		width: 45px;
 		height: 45px;
 		border-radius: 50%;
 		border: 3px solid red;
-	}
+		}
 
-	&__traks-colyesa4 {
-		position: absolute;
+		&__traks-colyesa4 {
+			position: absolute;
 		top: 0px;
 		left: 126px;
 		width: 45px;
 		height: 45px;
 		border-radius: 50%;
 		border: 3px solid red;
-	}
+		}
 
-	&__traks-colyesa5 {
-		position: absolute;
+		&__traks-colyesa5 {
+			position: absolute;
 		top: 0px;
 		left: 173px;
 		width: 45px;
 		height: 45px;
 		border-radius: 50%;
 		border: 3px solid red;
-	}
+		}
 
-	&__traks-colyesa6 {
-		position: absolute;
+		&__traks-colyesa6 {
+			position: absolute;
 		top: 0px;
 		left: 220px;
 		width: 45px;
 		height: 45px;
 		border-radius: 50%;
 		border: 3px solid red;
-	}
+		}
 
-	&__traks-colyesa7 {
-		position: absolute;
+		&__traks-colyesa7 {
+			position: absolute;
 		top: 7px;
 		left: 267px;
 		width: 30px;
 		height: 30px;
 		border-radius: 50%;
 		border: 3px solid red;
-	}
+		}
 
-	&__bachnya {
-		position: absolute;
+		&__bachnya {
+			position: absolute;
 		top: 80px;
 		left: 180px;
 		width: 110px;
 		height: 70px;
 		border-radius: 35%;
 		border: 3px solid green;
-	}
+		}
 
-	
-	&__puha {
-		position: relative;
+		&__puha {
+			position: relative;
 		top: 100px;
 		left: 2px;
 		width: 200px;
 		height: 25px;
+		}
 
-	}
-
-	
-
-	&__puha-up {
-		position: absolute;
-			top: 2px;
-			left: 0px;
-			height: 20px;
-			width: 35px;
-			border-radius: 25%;
-			border: 2px solid blue;
-	}
-
-	&__puha-top {
-		position: absolute;
-			top: 5px;
-			left: 30px;
-			height: 15px;
-			width: 150px;
-			border: 2px solid blue;
-	}
-
-	&__puha-down {
-		position: absolute;
+		&__puha-down {
+			position: absolute;
 			top: 0px;
 			left: 145px;
 			height: 23px;
 			width: 35px;
 			border-radius: 25%;
 			border: 2px solid blue;
-	}
-}
+		}
 
+		&__puha-top {
+			position: absolute;
+			top: 5px;
+			left: 30px;
+			height: 15px;
+			width: 150px;
+			border: 2px solid blue;
+		}
+
+		&__puha-up {
+			position: absolute;
+			top: 2px;
+			left: 0px;
+			height: 20px;
+			width: 35px;
+			border-radius: 25%;
+			border: 2px solid blue;
+		}
+}
 .controls {
-		width: 100%;
-		height: 150px;
-		position: relative;
-		top: 300px;
-		left: 10px;
-		
-	&__up {
+	width: 100%;
+	height: 150px;
+	position: relative;
+	top: 300px;
+	left: 10px;
+
+		&__up {
 			position: absolute;
 			top: 0;
 			left: 80px;
@@ -195,70 +178,144 @@ $rot:0deg;
 			border-right: 20px solid transparent;
 			border-bottom: 40px solid red;
 		}
-	&__up:active{
-		border-bottom: 40px solid gray;
-		
-	}
-	
+		&__up:active{
+			border-bottom: 40px solid gray;
+		}
 
-	&__down {
+		&__down {
+			position: absolute;
+			top: 100px;
+			left: 80px;
+			width: 0;
+			height: 0;
+			border-left: 20px solid transparent;
+			border-right: 20px solid transparent;
+			border-top: 40px solid red;
+		}
+		&__down:active{
+			border-top: 40px solid gray;
+		}
+
+		&__left {
+			position: absolute;
+			top: 50px;
+			left: 30px;
+			width: 0;
+			height: 0;
+			border-top: 20px solid transparent;
+			border-bottom: 20px solid transparent;
+			border-right: 40px solid red;
+		}
+		&__left:active{
+			border-right: 40px solid gray;
+		}
+
+		&__right {
+			position: absolute;
+			top: 50px;
+			left: 130px;
+			width: 0;
+			height: 0;
+			border-top: 20px solid transparent;
+			border-bottom: 20px solid transparent;
+			border-left: 40px solid red;
+		}
+		&__right:active{
+			border-left: 40px solid gray;
+		}
+
+		&__ok {
+			position: absolute;
+			top: 50px;
+			left: 800px;
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			background-color: green;
+		}
+		&__ok:active{
+			background-color: red;
+		}
+}
+.snaryad {
+	display: none;
+	width: 45px;
+	height: 50px;
+	position: absolute;
+	top: 377px;
+	left: 500px;
+
+	&__pulya {
 		position: absolute;
-		top: 100px;
-		left: 80px;
+		top: 15px;
+		left: 0px;
 		width: 0;
 		height: 0;
-		border-left: 20px solid transparent;
-		border-right: 20px solid transparent;
-		border-top: 40px solid red;
-	}
-	&__down:active{
-		border-top: 40px solid gray;
+		border-top: 10px solid transparent;
+		border-bottom: 10px solid transparent;
+		border-right: 20px solid black;
 	}
 
-	&__left {
+	&__gilza {
 		position: absolute;
-		top: 50px;
-		left: 30px;
-		width: 0;
-		height: 0;
-		border-top: 20px solid transparent;
-		border-bottom: 20px solid transparent;
-		border-right: 40px solid red;
-	}
-	&__left:active{
-		border-right: 40px solid gray;
-	}
-		
-	&__right {
-		position: absolute;
-		top: 50px;
-		left: 130px;
-		width: 0;
-		height: 0;
-		border-top: 20px solid transparent;
-		border-bottom: 20px solid transparent;
-		border-left: 40px solid red;
-	}
-	&__right:active{
-		border-left: 40px solid gray;
-	}
-
-	&__ok{
-		position: absolute;
-		top: 50px;
-		left: 800px;
-		width: 50px;
-		height: 50px;
-		border-radius: 50%;
-		background-color: green;
-		color: black;
-	}
-	&__ok:active{
+		top: 15px;
+		left: 20px;
+		width: 20px;
+		height: 20px;
 		background-color: red;
 	}
 }
 
+.mechen {
+	animation: michen 3s linear infinite;
+	position: absolute;
+	top: 100px;
+	left: 50px;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	background-color: blue;
+}
 
 
+@keyframes wistrelUp {
+	0%{
 
+		left: 500px;
+	}
+	
+	100%{
+		top: 200px;
+		left: 30px;
+	}
+}
+@keyframes wistrelTop {
+	0%{
 
+		left: 500px;
+	}
+	
+	100%{
+		
+		left: 30px;
+	}
+}
+@keyframes wistrelDown {
+	0%{
+
+		left: 500px;
+	}
+	
+	100%{
+		top: 500px;
+		left: 30px;
+	}
+}
+@keyframes michen {
+	0%{
+		top: 100px;
+	}
+	100%{
+		top: 500px;
+	}
+}

@@ -124,13 +124,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .tank {
-  /*
-	animation-name: tank;
-	animation-duration: 10s;
-	animation-timing-function: linear;
-	animation-direction: reverse;
-	animation-iteration-count: infinite;
-*/
   width: 400px;
   height: 200px;
   position: relative;
@@ -236,11 +229,11 @@ h1, h2, h3, h4, h5, h6 {
   height: 25px;
 }
 
-.tank__puha-up {
+.tank__puha-down {
   position: absolute;
-  top: 2px;
-  left: 0px;
-  height: 20px;
+  top: 0px;
+  left: 145px;
+  height: 23px;
   width: 35px;
   border-radius: 25%;
   border: 2px solid blue;
@@ -255,11 +248,11 @@ h1, h2, h3, h4, h5, h6 {
   border: 2px solid blue;
 }
 
-.tank__puha-down {
+.tank__puha-up {
   position: absolute;
-  top: 0px;
-  left: 145px;
-  height: 23px;
+  top: 2px;
+  left: 0px;
+  height: 20px;
   width: 35px;
   border-radius: 25%;
   border: 2px solid blue;
@@ -341,9 +334,125 @@ h1, h2, h3, h4, h5, h6 {
   height: 50px;
   border-radius: 50%;
   background-color: green;
-  color: black;
 }
 
 .controls__ok:active {
   background-color: red;
+}
+
+.snaryad {
+  display: none;
+  width: 45px;
+  height: 50px;
+  position: absolute;
+  top: 377px;
+  left: 500px;
+}
+
+.snaryad__pulya {
+  position: absolute;
+  top: 15px;
+  left: 0px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 20px solid black;
+}
+
+.snaryad__gilza {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+}
+
+.mechen {
+  -webkit-animation: michen 3s linear infinite;
+          animation: michen 3s linear infinite;
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: blue;
+}
+
+@-webkit-keyframes wistrelUp {
+  0% {
+    left: 500px;
+  }
+  100% {
+    top: 200px;
+    left: 30px;
+  }
+}
+
+@keyframes wistrelUp {
+  0% {
+    left: 500px;
+  }
+  100% {
+    top: 200px;
+    left: 30px;
+  }
+}
+
+@-webkit-keyframes wistrelTop {
+  0% {
+    left: 500px;
+  }
+  100% {
+    left: 30px;
+  }
+}
+
+@keyframes wistrelTop {
+  0% {
+    left: 500px;
+  }
+  100% {
+    left: 30px;
+  }
+}
+
+@-webkit-keyframes wistrelDown {
+  0% {
+    left: 500px;
+  }
+  100% {
+    top: 500px;
+    left: 30px;
+  }
+}
+
+@keyframes wistrelDown {
+  0% {
+    left: 500px;
+  }
+  100% {
+    top: 500px;
+    left: 30px;
+  }
+}
+
+@-webkit-keyframes michen {
+  0% {
+    top: 100px;
+  }
+  100% {
+    top: 500px;
+  }
+}
+
+@keyframes michen {
+  0% {
+    top: 100px;
+  }
+  100% {
+    top: 500px;
+  }
 }
